@@ -1,0 +1,43 @@
+# Python 字节码与缓存
+__pycache__/
+*.pyc
+*.pyo
+*.pyd
+
+# 环境变量（保留模板 .env-example）
+.env
+.env.*
+!.env-example
+
+# 虚拟环境
+venv/
+.venv/
+env/
+ENV/
+
+# 日志文件
+logs/
+*.log
+
+# 测试与覆盖率
+.pytest_cache/
+.coverage
+.coverage.*
+htmlcov/
+
+# 类型检查与打包产物
+.mypy_cache/
+.ruff_cache/
+*.egg-info/
+dist/
+build/
+
+# 编辑器与 IDE
+.idea/
+.vscode/
+*.swp
+*.swo
+
+# 操作系统
+.DS_Store
+Thumbs.db

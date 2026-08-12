@@ -10,6 +10,13 @@ from app.models.shortlink import ShortLink
 from app.models.task import TaskRecord
 from app.models.user import User
 
+# 新增项目模块模型
+from app.models.data_analysis import OrderRecord, UserProfile
+from app.models.sentiment_monitor import MonitorTask, SentimentRecord
+from app.models.proxy_pool import ProxyIP
+from app.models.api_test import ApiTestSuite, ApiTestCase, ApiTestRun
+from app.models.price_monitor import Product, PriceHistory, PriceAlert
+
 __all__ = [
     "BaseModel",
     "TimestampMixin",
@@ -17,4 +24,20 @@ __all__ = [
     "ShortLink",
     "TaskRecord",
     "CrawlData",
+    # 数据分析
+    "OrderRecord",
+    "UserProfile",
+    # 舆情监控
+    "MonitorTask",
+    "SentimentRecord",
+    # 代理IP池
+    "ProxyIP",
+    # 接口测试
+    "ApiTestSuite",
+    "ApiTestCase",
+    "ApiTestRun",
+    # 价格监控
+    "Product",
+    "PriceHistory",
+    "PriceAlert",
 ]
